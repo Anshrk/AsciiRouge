@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scene/sprite/PC.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scene/sprite/ArrowX.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scene/sprite/Dwarf.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scene/sprite/ArrowY.tscn" type="PackedScene" id=4]
+[ext_resource path="res://resources/curses_vector_24x36.png" type="Texture" id=5]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 312, 72, 24, 36 )
+
+[node name="MainScene" type="Node2D"]
+
+[node name="PC" parent="." instance=ExtResource( 1 )]
+position = Vector2( -0.603149, -2.19055 )
+
+[node name="ArrowX" parent="." instance=ExtResource( 2 )]
+position = Vector2( -0.412601, 33.5874 )
+
+[node name="ArrowY" parent="." instance=ExtResource( 4 )]
+position = Vector2( 23.3968, 105.984 )
+
+[node name="Dwarf" parent="." instance=ExtResource( 3 )]
+
+[node name="Floor" type="Sprite" parent="."]
+position = Vector2( 61.5118, 72.2267 )
+texture = SubResource( 1 )
+
+[node name="Wall" type="Sprite" parent="."]
