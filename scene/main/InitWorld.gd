@@ -50,7 +50,7 @@ func _init_wall() -> void:
 
 
 func _init_indicator() -> void:
-	_create_sprite(ArrowX, _new_GroupName.ARROW, 0, 12,
+	_create_sprite(ArrowX, _new_GroupName.ARROW, 1, 12,
 			-_new_DungeonSize.ARROW_MARGIN)
 	_create_sprite(ArrowY, _new_GroupName.ARROW, 5, 0,
 			0, -_new_DungeonSize.ARROW_MARGIN)
