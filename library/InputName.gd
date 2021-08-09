@@ -1,1 +1,0 @@
-const MOVE_LEFT: String = "move_left"
